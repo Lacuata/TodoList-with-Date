@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #333;
+    color: hsl(200, 100%, 90%);
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: Arial;
+
+  }
+  
+  .js-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+  }
+  
+.todo-name,
+.todo-date{
+    padding: 6px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    color: hsl(200, 100%, 90%);
+}
+
+.btn {
+    background: hsl(200, 100%, 50%, 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 50%);
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+
+  }
+  
+  .btn:hover,
+  .btn:focus-visible {
+    background: hsl(200, 100%, 50%, 0.2);
+  }
+  
+  .btn.btn-danger {
+    background: hsl(0, 100%, 40%, 0.1);
+    border: 1px solid hsl(0, 100%, 40%);
+    color: hsl(0, 100%, 40%);
+  }
+  
+  .btn.btn-danger:hover,
+  .btn.btn-danger:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+  }
+
+
+.todo-grid{
+    display: grid;
+    /* set how many columns 1st column 200 2nd 150 3rd 100  */
+    grid-template-columns: 200px 100px 100px;
+    gap: 10px;
+    /* to vertical the grid  */
+    align-items: center;
+}
+
+.todoList-grid{
+    margin-bottom: 10px;
+    /* to stretch the input and button and make them align and same height */
+    align-items: stretch;
+    display: grid;
+    /* set how many columns 1st column 200 2nd 150 3rd 100  */
+    grid-template-columns: 200px 150px;
+    gap: 10px;
+    /* to vertical the grid  */
+    align-items: center;
+}
+
+
+
+
+  @media (max-widtH: 480px){
+    .todo-grid{
+    /* set how many columns 1st column 200 2nd 150 3rd 100  */
+    grid-template-columns: 200px 100px 75px;
+    /* to vertical the grid  */
+}
+.todoList-grid{
+    grid-template-columns: 200px 150px ;
+
+}
+
+.btn2 {
+    width: 370px;
+}
+  }
